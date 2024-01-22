@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E Platform</title>
+    
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Main Platform CSS File -->
+    <link rel="stylesheet" href="CSS/E.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <a href="#home" class="logo">
+          <img loading="lazy" src="images/logo/logo.png" alt="logo" />
+        </a>
+        <nav id="ul">
+          <i class="fas fa-bars toggle-menu"></i>
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="#Contact Us">Contact</a></li>
+            <li><button class="hidden" id="lgn-btn">Login</button></li>
+          </ul>
+          <div class="form" id="showSearch">
+            <a href="#search"><i class="fas fa-search"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Search Bar -->
+    <div class="course-search" id="search">
+      <div class="search-container">
+        <button class="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+        <div class="searchbar">
+            <div class="sidebody">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+            </div>
+            <div class="body">
+                <div id="root"></div>
+            </div>
+        </div>
+    </div>
+      <!-- End Search Bar -->
+
+    <!-- Start Login  -->
+    <div class="login">
+      <div class="container" id="lgn-container">
+        <button class="cancel"><i class="fa-solid fa-xmark"></i></button>
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="password">
+                <a href="#">forget your password</a>
+                <Button>Sign In</Button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <Button class="hidden" id="login">Sign In</Button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <Button class="hidden" id="register">Sign Up</Button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- End Login  -->
+
+    <!-- Start Landing Section -->
+    <div id="home" class="landing">
+      <div class="intro">
+        <img src="images/logo/logo white.png" alt="">
+        <a href="#about-us"><i class="fa-solid fa-angle-down"></i></a>
+      </div>
+    </div>
+    <!-- End Landing Section -->
+
+    <!-- Start About Us -->
+    <div id="about-us" class="about-us">
+      <div class="container">
+        <img loading="lazy" class="img reveal" src="images/logo/blue-logo.png" alt="" />
+        <div class="text reveal">
+          <h1>Hello <span>There!</span></h1>
+          <p>
+            E Platform is an innovative educational platform that aims to
+            provide an exciting and effective learning experience for learners.
+            The site provides a wide range of educational resources and tools
+            covering different aspects of the English language, such as grammar,
+            vocabulary, reading, writing, and listening to help you gain
+            proficiency in conversation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+
+    <!-- Start Homepage-courses -->
+    <section class="homepage-courses">
+      <h2 class="title">
+        We provide you with the right tools to help you interact confidently in
+        the real world.
+      </h2>
+
+      <div class="container">
+        <!-- Start Skills Section -->
+        <section class="box show">
+          <div class="image">
+            <div class="img">
+              <img loading="lazy"
+                sizes="(max-width:600px) 100px, 100vw."
+                src="images/skills/home_skl.jpg"
+                alt="Skills"
+                typeof="foaf:Image"
+              />
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="c_title">Skills</div>
+
+            <div class="parag">
+              <!-- <p>
+                Practise your listening, reading, writing and speaking and learn
+                useful language to use at work or to communicate effectively
+                with friends.
+              </p> -->
+
+              <ul>
+                <li>
+                  Audio and video to practise your listening and speaking
+                  skills.
+                </li>
+                <li>Model texts for all types of writing tasks.</li>
+                <li>
+                  Work on your reading skills to read more quickly and
+                  understand more.
+                </li>
+              </ul>
+            </div>
+            <!-- Skills Button -->
+              <div class="link">
+                <a href="skills.html">Start learning</a>
+              </div>
+          </div>
+        </section>
+        <!-- End Skills Section -->
+
+        <!-- Start Grammar Section -->
+        <section class="box">
+          <div class="image">
+            <div class="img">
+              <img loading="lazy"
+                sizes="(max-width:600px) 100px, 100vw."
+                src="images/grammer/home_gr.jpg"
+                alt="grammar"
+                typeof="foaf:Image"
+              />
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="c_title">Grammar</div>
+
+            <div class="parag">
+              <!-- <p>
+                Revise and practise your grammar to improve your language level
+                and increase your confidence.
+              </p> -->
+
+              <ul>
+                <li>
+                  Clear and simple grammar explanations to help you revise and
+                  practise different grammar points.
+                </li>
+                <li>
+                  Online exercises to help you check your understanding of the
+                  grammar points.
+                </li>
+                <li>
+                  Use the grammar reference for further practice and more
+                  detailed explanations.
+                </li>
+              </ul>
+            </div>
+            <!-- Grammar Button -->
+            <div class="link">
+              <a href="grammer.html">Start learning</a>
+            </div>
+          </div>
+        </section>
+        <!-- End Grammar Section -->
+
+        <!-- Start Vocabulary Section -->
+        <section class="box">
+          <div class="image">
+            <div class="img">
+              <img loading="lazy"
+                sizes="(max-width:600px) 100px, 100vw."
+                src="images/vocabulary/home_voc.jpg"
+                alt="square"
+                typeof="foaf:Image"
+              />
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="c_title">Vocabulary</div>
+
+            <div class="parag">
+              <!-- <p>
+                Learn new words and improve your language level to be able to
+                communicate in English effectively.
+              </p> -->
+
+              <ul>
+                <li>
+                  Online exercises to help you learn the meaning, pronunciation
+                  and spelling of new words.
+                </li>
+                <li>
+                  Learn new words connected to a wide range of different topics.
+                </li>
+                <li>
+                  Play our word games and have fun as you improve your
+                  vocabulary.
+                </li>
+              </ul>
+            </div>
+            <!-- Vocabulary Button -->
+            <div class="link">
+              <a href="vocabulary.html">Start learning</a>
+            </div>
+          </div>
+        </section>
+        <!-- End Vocabulary Section -->
+      </div>
+    </section>
+
+    <!-- End Skills -->
+
+    <!-- Start Services -->
+    <div id="Services" class="services">
+      <div class="container reveal">
+        <h2 class="special-heading">Courses</h2>
+        <p>Learn more about our courses</p>
+      </div>
+      <div class="container2">
+        <div class="serv reveal">
+          <i class="fa-solid fa-award fa-2x"></i>
+          <h3>TOEFL</h3>
+          <p>
+            Start taking preparing courses for TOEFL with the best teachers in
+            Yemen
+          </p>
+        </div>
+
+        <div class="serv reveal">
+          <i class="fa-solid fa-language fa-2x"></i>
+          <h3>Translation</h3>
+          <p>
+            Start taking preparing courses for TOEFL with the best teachers in
+            Yemen
+          </p>
+        </div>
+
+        <a href="courses.html">
+        <div class="serv reveal">
+          <i class="fa-solid fa-play fa-2x"></i>
+          <h3>Courses</h3>
+          <p>
+            Start taking preparing courses for TOEFL with the best teachers in
+            Yemen
+          </p>
+        </div>
+      </a>
+
+        <div class="serv reveal">
+          <i class="fa-solid fa-chalkboard-user fa-2x"></i>
+          <h3>Studying Online</h3>
+          <p>
+            Start taking preparing courses for TOEFL with the best teachers in
+            Yemen
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+
+
+    <!-- Start Teachers -->
+    <div class="teachers" id="Teachers">
+    <div class="container">
+    <div class="T-container">
+      <h2 class="special-heading">Teachers</h2>
+      <p>
+        Stop wasting your time!And Start studying with the Best English
+        Teachers
+      </p>
+      <div class="T-cards">
+      <!-- 1   -->
+      <div class="profile-card">
+          <div class="img">
+              <img src="images/teacherTeam/Adnan.JPG"  alt="">
+          </div>
+          <div class="caption">
+              <h3>Amr Ata'a</h3>
+              <p>ESL Teacher</p>
+              <div class="social-links">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-sharp fa-solid fa-x"></i></a>
+              </div>
+          </div>
+      </div> 
+      <!-- 2 -->
+      <div class="profile-card">
+          <div class="img">
+              <img src="images/teacherTeam/Amr.jpg" alt="">
+          </div>
+          <div class="caption">
+              <h3>Amr Ata'a</h3>
+              <p>ESL Teacher</p>
+              <div class="social-links">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-sharp fa-solid fa-x"></i></a>
+              </div>
+          </div>
+      </div> 
+      <!-- 3 -->
+      <div class="profile-card">
+          <div class="img">
+              <img src="images/teacherTeam/Yahya.JPG" alt="">
+          </div>
+          <div class="caption">
+              <h3>Amr Ata'a</h3>
+              <p>ESL Teacher</p>
+              <div class="social-links">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-sharp fa-solid fa-x"></i></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <a href="teachers.html"><button >SEE ALL</button></a>
+  </div>
+</div>
+</div> 
+    <!-- End Teachers -->
+
+    <!-- Start Contact Us -->
+    <div id="Contact Us" class="contact-us">
+      <div class="container reveal">
+        <form action="">
+          <h1>Contact Us</h1>
+          <input type="text" id="firstName" placeholder="First Name" required />
+          <input type="text" id="lastName" placeholder="Last Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="mobile" placeholder="Mobile" required />
+          <h5>Type Your Message Here...</h5>
+          <textarea required></textarea>
+          <input type="submit" value="send" id="button" class="hidden" />
+        </form>
+      </div>
+    </div>
+
+    <!-- End Contact Us -->
+
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.facebook.com/profile.php?id=61551821106048&mibextid=ZbWKwL"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+        </li>
+
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="#"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item">
+          <a class="menu__link" href="#about-us">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#Services">Services</a>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+        <li class="menu__item">
+          <a class="menu__link" href="#Contact Us">Contact</a>
+        </li>
+      </ul>
+
+      <p>&copy;2024 E Platform | All Rights Reserved</p>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Start Up Button -->
+    <span class="up">
+      <i class="fa-solid fa-circle-up"></i>
+    </span>
+    <!-- End Up Button -->
+
+  </body>
+  <!-- javascript -->
+  <script src="JavaScript/function.js"></script>
+</html>

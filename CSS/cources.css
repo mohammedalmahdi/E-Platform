@@ -1,0 +1,229 @@
+/* Start Variables */
+:root {
+    --main-color: #00a8f3;
+    --secondary-color: #fff;
+    --third-color:black;
+}
+  /* End Variables */
+
+
+body{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Start Adjusting The Header */
+header {
+    position: relative;
+    background-color: var(--main-color);
+    height: 80px;
+}
+
+header .container::after {
+    bottom: 16px;
+}
+header nav ul li a.active,
+header nav ul li a:hover {
+  color: var(--third-color);
+  border-bottom: 1px solid var(--third-color);
+}
+header nav  button {
+    margin-top: -5px;
+}
+.special:hover {
+    border: none;
+}
+header nav .form i:hover {
+    color: var(--third-color);
+}
+/* End Adjusting The Header */
+
+/* Start Side Bar */
+.side-bar {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    z-index: 2;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+.side-bar::-webkit-scrollbar {
+    display: none;
+}
+.side-bar.active {
+    left: 0;
+}
+.side-bar .menu {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+.side-bar .menu .item a {
+    color: var(--third-color);
+    font-size: 16px;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+.side-bar .menu .item a:hover {
+    background: var(--main-color);
+    transition: 0.3s ease;
+}
+.side-bar .menu .item i {
+    margin-right: 15px;
+}
+.side-bar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+.side-bar .menu .item .sub-menu {
+    background: rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.side-bar .menu .item .sub-menu a {
+    padding-left: 80px;
+}
+.rotate {
+    transform: rotate(90deg);
+}
+.close-btn {
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color: var(--third-color);
+}
+.menu-btn {
+    position: absolute;
+    font-size: 30px;
+    margin-left: 110px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+@media (max-width: 992px){
+    .menu-btn {
+        margin-left: 10px;
+    }
+    header nav  button {
+        margin-top: 15px;
+    }
+}
+.menu-btn:hover {
+    color: var(--main-color);
+}
+
+/* End Sitebar */
+
+/* ----------------------------------- Start Courses Design -----------------------------------------------*/
+.cards {
+    margin: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 400px;
+    height: 400px;
+    background-color: var(--main-color);
+    box-shadow: 0 5px 10px 0 rgba(0, 0,0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card-img{
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.card-img img{
+    position: absolute;
+    width: 100%;
+}
+
+.card-body{
+    padding: 1.5rem;
+}
+
+.card-title{
+    font-size: 1.25rem;
+    line-height: 1.33;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-family: 'cario';
+}
+
+.card-title a {
+    color: var(--secondary-color);
+    
+}
+.card-intro{
+    margin-top: 0.75rem;
+    color: var(--secondary-color);
+    font-family: 'cario';
+}
+/* ----------------------------------- End Courses Design ------------------------------------------------*/
+
+/* Start Teachers Section */
+.teachers h2 {
+    color: var(--main-color);
+}
+.teachers {
+    background-color: #fafafa;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.T-container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.T-container .T-cards {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px 25px;
+}
+  /* End Teachers Section */
+
+
+.footer {
+    margin-top: 150px;
+}

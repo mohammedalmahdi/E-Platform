@@ -1,0 +1,20 @@
+
+
+/* Start Header */
+header {
+  position: relative;
+  background-color: var(--main-color);
+}
+
+header .container::after {
+  bottom: 22px;
+}
+
+/* End Header */
+
+
+
+/* Start footer */
+.footer {
+  margin-top: 150px;
+}
